@@ -1,5 +1,6 @@
 import React from "react";
 import { TodoContex } from "../TodoContex";
+import "./TodoForm.css";
 
 function TodoForm() {
   const [newTodoValue, setNewTodoValue] = React.useState("");
@@ -23,7 +24,7 @@ function TodoForm() {
       <textarea
         value={newTodoValue}
         onChange={onChange}
-        placeholder="Cortar la cebolla oara el almuerzo"
+        placeholder="Cortar la cebolla para el almuerzo"
       />
       <div className="TodoForm-buttonContainer">
         <button
